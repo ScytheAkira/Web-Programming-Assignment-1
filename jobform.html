@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="jobform.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="dark-mode-section">
+        <h1 class="fade-up-heading">Apply At Our Company!</h1>
+        <form class="dark-mode-form">
+            <div class="dark-mode-pair">
+                <div class="dark-mode-input1">
+                    <p>Full Name</p>
+                    <input type="text" id="FullName" required>
+                </div>
+                <div class="dark-mode-input2">
+                    <p>Email</p>
+                    <input type="email" id="Email" required>
+                </div>
+            </div>
+            <div class="dark-mode-input3">
+                <p>Address</p>
+                <input type="text" id="Address" required>
+            </div>
+            <div class="dark-mode-input4">
+                <p>Cover Letter</p>
+                <input type="text" id="CoverLetter" required>
+            </div>
+            <div class="dark-mode-input5">
+                <p>Highest Level of Education</p>
+                <input type="text" id="HighestEducation" required>
+            </div>
+            <div class="dark-mode-input6">
+                <p>Name of University</p>
+                <input type="text" id="University" required>
+            </div>
+            <div class="dark-mode-input7">
+                <p>Major</p>
+                <input type="text" id="Major" required>
+            </div>
+            <div class="dark-mode-input8">
+                <p>Graduation Area</p>
+                <input type="text" id="GraduationArea" required>
+            </div>
+            <div class="dark-mode-input9">
+                <p>Employment History</p>
+                <input type="text" id="EmploymentHistory" required>
+            </div>
+            <div class="dark-mode-input10">
+                <p>Previous Company Name</p>
+                <input type="text" id="PreviousCompanyName">
+            </div>
+            <div class="dark-mode-pair">
+                <div class="dark-mode-input11">
+                    <p>Previous Job Starting Date</p>
+                    <input type="date" id="PrevStartDate">
+                </div>
+                <div class="dark-mode-input12">
+                    <p>Previous Job Ending Date</p>
+                    <input type="date" id="PrevEndDate">
+                </div>
+            </div>
+            <div class="dark-mode-input13">
+                <p>Skills</p>
+                <input type="text" id="Skills" required>
+            </div>
+            <div class="dark-mode-input14">
+                <p>Certifications</p>
+                <input type="text" id="Certifications">
+            </div>
+            <div class="dark-mode-input15">
+                <p>How soon can you join?</p>
+                <input type="Date" id="JoiningDate" required>
+            </div>
+            <div class="dark-mode-input16">
+                <p>Preferred Work Schedule</p>
+                <input type="text" id="PreferredSchedule" required>
+            </div>
+            <div class="dark-mode-input17">
+                <p>Willingness to Relocate</p>
+                <input type="text" id="WillingnessToRelocate" required>
+            </div>
+            <div class="dark-mode-input18">
+                <p>Reference Name</p>
+                <input type="text" id="ReferenceName">
+            </div>
+            <div class="dark-mode-input19">
+                <p>Relation with Reference</p>
+                <input type="text" id="ReferenceRelation">
+            </div>
+            <div class="dark-mode-input20">
+                <p>Why do you want to work with us?</p>
+                <input type="text" id="WhyWorkWithUs">
+            </div>
+            <label for="pdfFile">Select PDF file for Submitting Resume:</label>
+            <input type="file" id="pdfFile" name="pdfFile" accept=".pdf" required>
+            <div class="dark-mode-box">
+                <div class="dark-mode-input">  <input type="checkbox" id="AcceptPolicy" required> </div>
+                <div class="dark-mode-label"> <label for="AcceptPolicy">Accept our policy</label></div>
+            </div>
+            <div class="dark-mode-button">
+                <button type="submit" class="dark-mode-submit-button" >SUBMIT</button>
+            </div>
+            <div class="dark-mode-button">
+                <button class="dark-mode-table-button" >View Application as Table</button>
+            </div>
+        </form>
+    </div>
+
+    <table style="display: none;">
+        <thead>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows -->
+            <!-- <tr>
+                <td>Row 1, Column 1</td>
+                <td>Row 1, Column 2</td>
+            </tr> -->
+        </tbody>
+    </table>
+</body>
+<script src="jobform.js"></script>
+
+</html>

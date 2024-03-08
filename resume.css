@@ -1,0 +1,137 @@
+.bold {
+    font-weight: bold;
+}
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+  }
+:root{
+    --dark_color: #131314;
+    --darker_color:#111112;
+    /* --lessdark_color: */
+}
+body {
+    background-color: var(--dark_color);
+    background-image: url("https://images.unsplash.com/photo-1618022325802-7e5e732d97a1?q=80&w=1948&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    font-family: Arial, sans-serif;
+    display: grid;
+    place-content: center;
+    color:#a8a89b;
+    margin: 0;
+    padding: 0;
+}
+
+#pfp{
+    box-shadow: 0 3px 10px 0 #c2c2b9, 0 3px 10px 0 #a7a7af;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media only screen and (min-width: 40em){  /*this is for desktop screens */
+    header {
+        padding: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
+    }
+ }
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+ h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.content>h1 {
+    font-size: 26px;
+}
+
+.content>h2 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.content>h3 {
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+
+.content>p {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+main{
+    margin: 1rem;
+}
+.box {
+    padding: 20px;
+    margin: 20px;
+    background-color:var(--darker_color);
+    border: 1px hidden #171719;
+    border-radius: 20px;
+}
+.box2 {
+    padding: 15px;
+    margin: 10px;
+}
+.block {
+
+    position: relative;
+    background-color:var(--dark_color);
+    max-width: 800px;
+    aspect-ratio: 3/4;
+    border-radius: 20px;
+    margin: 20px auto;
+}
+
+.block::before , .block::after {
+
+    content: '';
+    position: absolute;
+    inset : -0.05rem;
+    z-index: -1;
+    
+    background: conic-gradient(
+        from var(--gradient-angle),
+        #c2c2b9,
+        #a7afaa,
+        #a7a7af,
+        #c2b9bd,
+        #a7a7af,
+        #a7afaa
+    );
+    border-radius: inherit;
+    animation: rotation 20s linear infinite;
+    
+}
+
+.block::after {
+    filter: blur(3.5rem);
+    opacity: 0.7;
+}
+
+@keyframes rotation {
+    0% {
+      --gradient-angle: 0deg;
+    }
+    100% {
+      --gradient-angle: 360deg;
+    }
+  }
